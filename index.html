@@ -1,40 +1,267 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080808">
+
 <title>DA’AR SCENTS | Connect With Us</title>
+
 <style>
-:root{--gold:#d6b56d;--gold2:#f3dfaa;--bg:#080808;--panel:#141414;--muted:#b9b2a4}
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top,#282015 0,#111 38%,#070707 78%);color:#f8f5ed;font-family:Arial,Helvetica,sans-serif;display:flex;justify-content:center;padding:32px 18px}
-main{width:min(100%,460px);text-align:center;margin:auto}
-.logo{width:94px;height:94px;border:1px solid #80683b;border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;color:var(--gold2);font-family:Georgia,serif;font-size:20px;letter-spacing:2px;box-shadow:0 0 35px #c49b4a20}
-h1{font-family:Georgia,'Times New Roman',serif;letter-spacing:4px;font-size:clamp(27px,7vw,36px);margin:0;color:var(--gold2)}
-.tag{font-size:10px;letter-spacing:3px;color:var(--muted);margin:11px 0 30px}
-h2{font-family:Georgia,serif;font-size:21px;font-weight:400;margin:0 0 9px}
-.intro{font-size:14px;line-height:1.6;color:var(--muted);margin:0 0 25px}
-.links{display:grid;gap:13px}
-a.social{display:flex;align-items:center;justify-content:center;gap:12px;padding:17px 20px;border:1px solid #80683b;border-radius:9px;background:linear-gradient(110deg,#1c1a16,#111);color:#f7e6bc;text-decoration:none;font-size:13px;font-weight:bold;letter-spacing:2px;transition:.2s}
-a.social:hover{background:#2b2418;transform:translateY(-2px);border-color:var(--gold2)}
-.symbol{width:22px;height:22px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-size:12px;letter-spacing:0}
-footer{margin-top:35px;color:#817969;font-size:11px;letter-spacing:1px}
+:root {
+    --gold: #d6b56d;
+    --gold2: #f3dfaa;
+    --bg: #080808;
+    --panel: #141414;
+    --muted: #b9b2a4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(
+        ellipse at top,
+        #282015 0,
+        #111 38%,
+        #070707 78%
+    );
+    color: #f8f5ed;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 32px 18px;
+}
+
+main {
+    width: min(100%, 460px);
+    text-align: center;
+    margin: auto;
+}
+
+/* LOGO */
+.logo {
+    width: 94px;
+    height: 94px;
+    border: 1px solid #80683b;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 18px;
+    color: var(--gold2);
+    font-family: Georgia, serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 35px #c49b4a20;
+}
+
+/* HEADER */
+h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    letter-spacing: 4px;
+    font-size: clamp(27px, 7vw, 36px);
+    margin: 0;
+    color: var(--gold2);
+}
+
+.tag {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--muted);
+    margin: 11px 0 30px;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0 0 9px;
+}
+
+.intro {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 25px;
+}
+
+/* SOCIAL LINKS */
+.links {
+    display: grid;
+    gap: 13px;
+}
+
+a.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 17px 20px;
+    border: 1px solid #80683b;
+    border-radius: 9px;
+    background: linear-gradient(110deg, #1c1a16, #111);
+    color: #f7e6bc;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .2s;
+}
+
+a.social:hover {
+    background: #2b2418;
+    transform: translateY(-2px);
+    border-color: var(--gold2);
+}
+
+.symbol {
+    width: 22px;
+    height: 22px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+/* ORDER BUTTON */
+a.order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 23px;
+    padding: 19px 20px;
+    border-radius: 9px;
+    background: linear-gradient(110deg, #d6b56d, #f3dfaa, #c49b4a);
+    color: #100d08;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    box-shadow: 0 5px 20px #d6b56d25;
+    transition: .25s;
+}
+
+a.order:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px #d6b56d45;
+    background: linear-gradient(110deg, #f3dfaa, #d6b56d);
+}
+
+.cart-icon {
+    width: 23px;
+    height: 23px;
+    stroke: #100d08;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 35px;
+    color: #817969;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 380px) {
+    main {
+        width: 100%;
+    }
+
+    h1 {
+        letter-spacing: 2px;
+    }
+
+    a.social, a.order {
+        padding: 16px 12px;
+    }
+}
 </style>
 </head>
+
 <body>
+
 <main>
-  <div class="logo">DA’AR</div>
-  <h1>DA’AR SCENTS</h1>
-  <div class="tag">YOUR SIGNATURE FRAGRANCE</div>
-  <h2>Connect With Us</h2>
-  <p class="intro">Discover your signature scent and stay connected.<br>Follow DA’AR SCENTS on our social platforms.</p>
-  <div class="links">
-    <a class="social" href="https://www.facebook.com/daarscent" target="_blank" rel="noopener noreferrer"><span class="symbol">f</span> FACEBOOK</a>
-    <a class="social" href="https://www.instagram.com/daarscent/?hl=en" target="_blank" rel="noopener noreferrer"><span class="symbol">◎</span> INSTAGRAM</a>
-    <a class="social" href="https://www.tiktok.com/@daar_scent" target="_blank" rel="noopener noreferrer"><span class="symbol">♪</span> TIKTOK</a>
-  </div>
-  <footer>THANK YOU FOR SUPPORTING DA’AR SCENTS</footer>
+
+    <div class="logo">DA’AR</div>
+
+    <h1>DA’AR SCENTS</h1>
+
+    <div class="tag">YOUR SIGNATURE FRAGRANCE</div>
+
+    <h2>Connect With Us</h2>
+
+    <p class="intro">
+        Discover your signature scent and stay connected.<br>
+        Follow DA’AR SCENTS on our social platforms.
+    </p>
+
+    <!-- SOCIAL MEDIA LINKS -->
+    <div class="links">
+
+        <a class="social"
+           href="https://www.facebook.com/daarscent"
+           target="_blank"
+           rel="noopener noreferrer">
+            <span class="symbol">f</span>
+            FACEBOOK
+        </a>
+
+        <a class="social"
+           href="https://www.instagram.com/daarscent/?hl=en"
+           target="_blank"
+           rel="noopener noreferrer">
+            <span class="symbol">◎</span>
+            INSTAGRAM
+        </a>
+
+        <a class="social"
+           href="https://www.tiktok.com/@daar_scent"
+           target="_blank"
+           rel="noopener noreferrer">
+            <span class="symbol">♪</span>
+            TIKTOK
+        </a>
+
+    </div>
+
+    <!-- ORDER HERE BUTTON -->
+    <a class="order"
+       href="https://onagi14.github.io/daar-scents-website/"
+       target="_blank"
+       rel="noopener noreferrer">
+
+        <svg class="cart-icon"
+             viewBox="0 0 24 24"
+             aria-hidden="true">
+
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+
+        </svg>
+
+        ORDER HERE
+
+    </a>
+
+    <footer>
+        THANK YOU FOR SUPPORTING DA’AR SCENTS
+    </footer>
+
 </main>
+
 </body>
 </html>
+```
